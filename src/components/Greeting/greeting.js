@@ -8,10 +8,6 @@ class Greeting extends Component {
     };
   }
 
-  componentDidMount() {
-    setInterval(this.updateGreetingType.bind(this), 1200000);
-  }
-
   greetingText() {
     const time = new Date().getHours();
     switch (true) {
@@ -30,15 +26,11 @@ class Greeting extends Component {
     this.setState({ greetingText: this.greetingText() });
   }
 
-
-
   render() {
     return (
-      <div >
-          <h3 className='d-flex justify-content-center'>
-        {this.state.greetingText}, Samar
-        </h3>
-      </div>
+      <h3>
+        {this.state.greetingText}, {this.props.name}
+      </h3>
     );
   }
 }

@@ -1,0 +1,16 @@
+.Box {
+  width: 40%;
+  height: 40%;
+  top: 50%;
+  left: 50%;
+  margin: 10% auto;
+  z-index: 10;
+  text-align: center;
+  padding: 12px;
+  color: rgba(250, 229, 215, 0.863);
+}
+
+.quotes {
+  position: absolute;
+  bottom: 0;
+}
